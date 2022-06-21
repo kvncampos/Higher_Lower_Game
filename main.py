@@ -1,4 +1,6 @@
 from game_data import data
-
-#test import
+from art import vs, logo
+# test import
 print(data[1])
+print(vs)
+
