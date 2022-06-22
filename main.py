@@ -13,28 +13,12 @@ import os
 print(logo)
 print("Welcome to the higher-lower game. Try to guess which account has the most followers!")
 
-# Pick 2 Random Items from game_data
-# item1 = random.randint(0, (len(data) - 1))
-# item2 = random.randint(0, (len(data) - 1))
-# print(item1, item2)
-
-
-# Let use decide which one has higher follower count
-# print(f"A. {data[item1]['name']}, {data[item1]['description']}, {data[item1]['country']}")
-# print(vs)
-# print(f"B. {data[item2]['name']}, {data[item2]['description']}, {data[item2]['country']}")
-
-
-# increase score per good answer
-
-# followers1 = data[item1]['follower_count']
-# followers2 = data[item2]['follower_count']
-# print(f"Follower1 {followers1}, Follower2 {followers2}")
-
 
 def winner():
     item1 = random.randint(0, (len(data) - 1))
     item2 = random.randint(0, (len(data) - 1))
+    if item1 == item2:
+        item2 = random.randint(0, (len(data) - 1))
     followers1 = data[item1]['follower_count']
     followers2 = data[item2]['follower_count']
     # print(f"Follower1 {followers1}, Follower2 {followers2}")
